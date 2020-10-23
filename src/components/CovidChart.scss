@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.report {
+  // transform: translate(20px, 0px);
+
+  .bar {
+    &.confirmed {
+      fill: steelblue;
+    }
+    &.deaths {
+      fill: #000;
+    }
+  }
+
+  .desc {
+    fill: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+}
+
+#grid {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+  text,
+  .domain {
+    display: none;
+  }
+}
+
+.axis_x {
+  .tick {
+    text {
+      transform: rotate(90deg) translate(32px, -11px);
+    }
+  }
+}
